@@ -789,6 +789,12 @@ See <https://info.meshcentral.com/downloads/MeshCentral2/MeshCentral2UserGuide.p
 
 First, get your TRMM server installed with a standard config and working.
 
+Next, on the TRMM server, add a firewall exception for the MeshCentral port:
+
+```bash
+sudo ufw allow 4430
+```
+
 Then in NPM, declare the hosts with the parameters:
 
 ```
